@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Haskell&rarr;Scala</title>
+    <link rel="stylesheet" href="haskelltalk.css" type="text/css">
+  </head>
+  <body>
+    <div id="navigation">
+      <a href="">&lArr;</a> | <a href="outline.html"> Outline </a> | <a href="">&rArr;</a>
+    </div>
+    <h1>Porting Haskell to Scala</h1>
+    <table id="math-to-haskell-chart" cellpadding="0" cellspacing="0">
+      <tr>
+        <th>
+          Concept or Function
+        </th>
+        <th>
+          Haskell Code
+        </th>
+        <th>
+          Scala Code
+        </th>
+      </tr>
+      <tr>
+        <td>
+          map
+        </td>
+        <td>
+          <pre>map func iterable</pre>
+        </td>
+        <td>
+          <pre>iterable.map(func)</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Lambda
+        </td>
+        <td>
+          <pre>\x = x+x</pre>
+        </td>
+        <td>
+          <pre>x => x+x</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Function Definitions (types)
+        </td>
+        <td>
+          <pre>
+double::Int->Int
+double x = x + x
+          </pre>
+        </td>
+        <td>
+          <pre style="text-align: left;">
+def double(number: Integer):Integer = { 
+  number + number
+}
+
+//or
+
+def double(number: Integer) = {
+  number + number
+}
+
+//or 
+
+def double = (number: Integer) => number + number
+</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          List Comprehensions
+        </td>
+        <td>
+          <pre>[ x | x <- [1..20], x `mod` 2 == 0]</pre>
+        </td>
+        <td>
+          <pre>for {x <- (1 to 20) if x % 2 ==0 } yield x </pre>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

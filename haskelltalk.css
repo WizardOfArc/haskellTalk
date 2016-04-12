@@ -1,0 +1,58 @@
+body {
+  font-family: Arial;
+}
+
+.pinkText {
+  color: #d233cf;
+}
+
+h1 {
+  margin: auto;
+  margin-bottom: 10px;
+  position: relative;
+  text-align: center;
+}
+
+#math-to-haskell-chart {
+  position: relative;
+  margin: auto;
+  border: solid gray 4px;
+  border-radius: 4px;
+}
+
+#math-to-haskell-chart th {
+  padding: 5px;
+  background-color: #e2c3df;
+  border: solid 1px #d2b3cf;
+}
+
+#math-to-haskell-chart td {
+  text-align: center;
+  border: solid 1px gray;
+  padding: 4px;
+}
+
+#math-to-haskell-chart pre {
+  font-weight: bold;
+}
+
+#math-to-haskell-chart .function-def {
+  margin:auto;
+}
+
+#math-to-haskell-chart .function-def td{
+  border: 0 transparent !important;
+}
+
+a {
+  text-decoration: none;
+  color: #d233cf;
+}
+
+#navigation {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  font-size: 24px;
+  color: #d233cf;
+}

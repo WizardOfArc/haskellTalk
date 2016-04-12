@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Haskell Talk</title>
+    <link rel="stylesheet" href="haskelltalk.css" type="text/css">
+  </head>
+  <body>
+  
+ - Possible headline: "A lot of Scala Devs are just writing pretty Java"
+ - Possible main point: "Write some things in Haskell to train yourself to write better Scala"
+  <h2>Outline</h2>
+  <ul>
+    <li>
+    <h3>What is Haskell?</h3>  
+    <p>Hakell is a pure - functional programming language named after Haskell Curry (one of the developers of lambda calculus) </p>
+    </li>
+    <li>
+    <h3>Why should we care?</h3>
+      <ul>
+        <li>It was one of the main influences on the design of Scala</li>
+        <li>Haskell's strong typing and functionally purity forces one to think in terms of composing deterministic functions.<br />This makes one approach Scala in a more functional way&mdash;chaining transformations.</li>
+      </ul>
+    </li>
+    <li>
+    <h3>Why Azi?</h3>
+      <ul>
+        <li>Not a Haskell expert</li>
+        <li>Software Engineer with a Degree in Math and a love for languages</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Why Azi loves Haskell?</h3>
+      <ul>
+        <li><a href="mathToHaskellComparison.html">Syntax and approach is inspired by Mathematics</a></li>
+
+        <li><h4>Functions are pure and deterministic:</h4>
+          <ul>
+            <li>Functions are statically and strongly typed</li>
+            <li>Same input will have the same output - always</li>
+          </ul>
+        </li>
+        <li>Pattern matching and guards</li>
+        <li>Internal definitions with either "let" or "where"</li>
+
+        <li>Currying / partial applictaion built in (good for reuse and modularity)</li>
+
+        <li>No for loops, everything is a function call. <a href="listFunctions.html">List processing functions</a> are abstractions of some recursive calls.</li>
+        <li>Declarative...  list of definitions as opposed to a list of instructional steps</li>
+        <li>Type aliasing</li>
+      <li>Non deterministic code (like IO) is quarantined off into monads (a deterministic workaround to handle the non-deterministic world of states)</li>
+      </ul>
+    </li>
+    <li>
+
+    <h3>Now what?</h3>
+    <ol>
+      <li>Think functionally first - sketch things in Haskell</li>
+      <li><a href="haskellToScalaPorting.html">Porting Haskell patterns to Scala </a></li>
+      <li>Separate your IO into isolated, small parts</li>
+    </ol>
+    </li>
+  </ul>
+ </body>
+</html>

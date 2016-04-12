@@ -1,0 +1,31 @@
+#pictureHolder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  height: 400px;
+
+}
+#pictureHolder img {
+  height: 400px;
+}
+
+#calling-card {
+  position: absolute;
+  top: 0;
+  left: 420px;
+  top: 0px;
+  height: 400px;
+  display: inline-block;
+}
+
+#name {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.contact-line {
+  font-size: 35px;
+  color: #d233cf;
+}
+

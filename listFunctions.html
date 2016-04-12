@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>List Functions</title>
+    <link rel="stylesheet" href="haskelltalk.css" type="text/css">
+  </head>
+  <body>
+    <div id="navigation">
+      <a href="">&lArr;</a> | <a href="outline.html"> Outline </a> | <a href="">&rArr;</a>
+    </div>
+    <h1>List Functions</h1>
+    <table id="math-to-haskell-chart" cellpadding="0" cellspacing="0">
+      <tr>
+        <th>Function</th>
+        <th>Description/use</th>
+      </tr>
+      <tr>
+        <td><pre>map</pre></td>
+        <td style="text-align: left"><pre>
+map::(a -> b) -> [a] -> [b]
+map func list</pre>creates a new list by applying func to each element in input list </td>
+      </tr>
+      <tr>
+        <td><pre>fold</pre></td>
+        <td style="text-align: left"><pre>
+foldr :: Foldable t => (a -> b -> b) -> b -> t a -> b
+</pre>Reduces a list to a single value by applying a two argument function to each element and the result of the last application: foldr requires a starting value, foldr1 uses the first element in the list as the starting value</td>
+      </tr>
+      <tr>
+        <td><pre>:</pre> cons</td>
+        <td style="text-align: left"><pre>(:) :: a -> [a] -> [a]</pre> appends element to the head of a list - it's the constructor for the list (constructors can be used for destructuring and pattern matching)</td> 
+      </tr>
+      <tr>
+        <td><pre>++</pre> cons</td>
+        <td style="text-align: left"><pre>(++) :: [a] -> [a] -> [a]</pre> joins two lists together</td> 
+      </tr>
+    </table>
+  </body>
+</html>
