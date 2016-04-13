@@ -116,11 +116,12 @@ let a:as = "hi there"
         </td>
         <td>
           <pre style="text-align: left;">
-// cons is an operator not a constructor so cannot use the same method for destructuring
-// you can extract values from tuples though
-var (a,b) = (32, 45)
-// a is now 32 
-// b is now 45
+// Since Strings are Java Strings in Scala - you have to convert it to a List to get the benefit (Thanks Cate Nestor for this tip)
+val a::as = "hi there".toList
+// a: Char = h
+// as: List[Char] = List(i,  , t, h, e, r, e)
+val tailString = as.mkString
+// tailString: String = i there
 </pre>
         </td>
       </tr>
